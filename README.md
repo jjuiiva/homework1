@@ -91,7 +91,8 @@ flowchart LR
 
     A --git add--> B
     B --git commit--> D
-    D --внесены изменения--> C
+    D --внесены 
+	изменения--> C
     C --git add--> B
 ```
 	
