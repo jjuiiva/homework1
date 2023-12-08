@@ -84,15 +84,14 @@ git log
 ```mermaid
 flowchart LR
 
-    A((Untracked))
+    A(("Untracked"))
     B([Staged])
     C([Modified])
     D([Tracked])
 
     A --git add--> B
     B --git commit--> D
-    D --внесены 
-	изменения--> C
+    D --внесены изменения--> C
     C --git add--> B
 ```
 	
