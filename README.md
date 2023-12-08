@@ -89,9 +89,9 @@ flowchart LR
     C([Modified])
     D([Tracked])
 
-    A --(git add)-----> B
-    B --> D
-    D --> C
-    C --> B
+    A --git add--> B
+    B --git commit--> D
+    D --внесены изменения--> C
+    C --git add--> B
 ```
 	
