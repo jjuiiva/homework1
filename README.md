@@ -83,6 +83,18 @@ git log
 
 ```mermaid
 flowchart LR
-    A(Привет)
+    A(("Untracked (неотслеживаемый)"))
+
+    B(["Staged (в списке на коммит)"])
+
+    C(["modified (измененный)"])
+
+    D(["tracked (отслеживаемый)"])
+
+    A -- (git add) --> B
+    B -- (git commit) --> D
+    D -- (внесены
+    изменения) ---> C
+    C -- (git add) -----> B
 ```
 	
