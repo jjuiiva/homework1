@@ -89,7 +89,7 @@ flowchart LR
     C([Modified])
     D([Tracked])
 
-    A --> B
+    A --git add--> B
     B --> D
     D --> C
     C --> B
